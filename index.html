@@ -2,9 +2,79 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+
+    <!-- attach bootstrap css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- attach own css -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <title>Amazon Sign In</title>
   </head>
   <body>
+    <header>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <img id="logo" src="http://placehold.it/103x31" alt="Image">
+            <!-- logo still not completely center with bootstrap -->
+          </div> <!-- ends col-md-12 -->
+        </div> <!-- ends image row -->
+      </div> <!-- ends container-->
 
+      <div class="container" >
+        <div class="row">
+          <div class="col-md-6 offset-md-4">
+            <div class="card" id="signinbox">
+              <form action="https://www.w3schools.com/action_page.php" method="get">
+                <div class="form-group">
+                  <h1>Sign in</h1>
+                  <label class="label-text" for="exampleInputEmail1">Email (phone for mobile accounts)</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label class="label-text" for="exampleInputPassword1">Password</label>
+                  <div class="getpw">
+                    <a href = "forgotpasswordhyperlink">Forgot your password?</a>
+                  </div>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+                </div>
+                <button id="signin" type="submit" class="btn btn-primary btn-block">Sign in</button>
+                <div class="form-check" id="keepme">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Keep me signed in. <a href = "detailshyperlink">Details</a></label>
+                </div>
+                  <div id="newto">New to Xxxxxx?
+                  </div>
+                <button id="create" type="submit" class="btn btn-primary btn-block">Create your Xxxxxx account</button>
+              </form>
+            </div> <!-- card -->
+          </div> <!-- ends col-md-4 -->
+        </div> <!-- ends row -->
+      </div> <!-- ends container -->
+    </main>
+    <footer class="bottomtext">
+    <div class="container bottomtext1">
+      <div class="row">
+        <div class="col-md-6 offset-md-4">
+          <a href = "ConditionsofUselink">Conditions of Use</a>
+          <span class="seperator"></span>
+          <a href = "PrivactNoticelink">Privact Notice</a>
+          <span class="seperator"></span>
+          <a href = "Helplink">Help</a>
+        </div> <!-- ends col 4 -->
+      </div> <!-- ends row --->
+    </div> <!-- ends container --->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-4">
+          1996-2019, xxxxxx.com, Inc. or its affiliates
+          </div> <!-- ends col 4 -->
+        </div> <!-- ends row --->
+      </div> <!-- ends container --->
+    </footer>
   </body>
 </html>
